@@ -1,0 +1,13 @@
+<div class="card card-wow mb-3 animated fadeIn fast">
+  <img class="card-img-top" [src]="expansion.image" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{ expansion.nombre }}</h5>
+    <p class="card-text">{{ expansion.descripcion }}</p>
+    <p class="card-text">
+      <small class="text-muted">Fecha de lanzamiento: {{ expansion.fecha }}</small>
+    </p>
+    <button (click)="showExpansion(expansion.id)" type="button" class="btn btn-wow">
+      Ver más...
+    </button>
+  </div>
+</div>

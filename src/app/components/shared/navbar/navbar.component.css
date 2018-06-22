@@ -1,0 +1,23 @@
+.navbar-wow{
+  background-color: #101010;
+  border-bottom: 5px solid black;
+}
+
+.navbar-wow span.navbar-toggler-icon{
+  color: white;
+}
+.navbar-wow ul li a{
+  color: #d9d9d9;
+}
+
+.navbar-wow ul li a:hover{
+  background-color: #0566af;
+}
+
+.navbar-wow ul li.active{
+  background-color: #303030;
+}
+
+.navbar-wow .btn-search{
+  background-color: #0566af;
+}

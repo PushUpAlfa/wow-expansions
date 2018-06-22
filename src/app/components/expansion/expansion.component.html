@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="jumbotron animated fadeIn fast my-auto">
+    <img src="assets/image/headLogo.png" alt="World of Warcraft" width="400" class="img-fluid mx-auto d-block mt-5">
+  </div>
+
+
+  <div class="card card-wow mb-3 animated fadeIn fast">
+    <img class="card-img-top" [src]="expansion.image" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{ expansion.nombre }}</h5>
+
+      <div class="row">
+        <div class="col col-lg-6 col-12">
+          <p class="card-text">{{ expansion.descripcion }}</p>
+          <p class="card-text">
+            <small class="text-muted">Fecha de lanzamiento: {{ expansion.fecha }}</small>
+          </p>
+          <p> Facción más fuerte:</p>
+          <img [src]="getFaction(expansion.faccion)" width="100" [alt]="expansion.faccion" class="mx-auto d-block">
+        </div>
+
+        <div class="col col-lg-6 col-12">
+          <span>Razas: </span>{{ expansion.razas }} <br>
+          <span>Clases: </span>{{ expansion.clases }} <br>
+          <span>Battleground: </span>{{ expansion.battleground }} <br>
+          <span>Nivel máximo: </span>{{ expansion.nivel_maximo }} <br>
+          <span>Zonas: </span>{{ expansion.zonas }} <br>
+          <span>Mazmorras: </span>{{ expansion.mazmorras }} <br>
+          <span>Arenas: </span>{{ expansion.arenas }} <br>
+          <span>Profesiones: </span>{{ expansion.profesiones }} <br>
+          <br>
+          <a class="btn btn-wow" [routerLink]="['/expansions', '']">Regresar</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+

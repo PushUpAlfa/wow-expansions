@@ -1,0 +1,10 @@
+.container{
+  min-height: 100vh;
+}
+
+.container .jumbotron{
+  background-color: rgba(0, 0, 0, .9);
+  color: #d4d4d4;
+  border-bottom: 20px solid black;
+}
+

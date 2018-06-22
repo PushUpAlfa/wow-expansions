@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-lg navbar-dark navbar-wow fixed-top">
+  <a class="navbar-brand" [routerLink]="['home']">
+    <img src="/assets/image/logo.png" alt="Blizzard" width="80">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['home']">Inicio</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['about']">Acerca de</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['expansions', '']">Expansiones</a>
+      </li>
+    </ul>
+    <div class="form-inline my-3">
+      <div class="input-group">
+        <input type="search"
+               class="form-control"
+               (keyup.enter)="searchExpansion(buscarTexto.value)"
+               placeholder="Buscar expansión ..."
+               #buscarTexto>
+        <div class="input-group-append">
+          <button (click)="searchExpansion(buscarTexto.value)" class="btn btn-search text-white" type="button">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

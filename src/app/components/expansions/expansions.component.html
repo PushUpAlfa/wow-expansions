@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="jumbotron animated fadeIn fast my-auto">
+    <img src="assets/image/headLogo.png" alt="World of Warcraft" width="400" class="img-fluid mx-auto d-block mt-5">
+  </div>
+
+  <app-card-expansion *ngFor="let expansion of expansions" [expansion]="expansion"></app-card-expansion>
+
+  <div class="row" *ngIf="expansions.length == 0">>
+    <div class="col-md-12">
+      <div class="alert alert-info">
+        <p>No se encontraron héroes con el término: {{ termino }}</p>
+      </div>
+    </div>
+  </div>
+</div>
